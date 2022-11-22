@@ -1,8 +1,7 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
-import HCard from './HCard';
 
-const Hero = ({heading, message, action, onClicked, title, text}) => { 
+const Hero = ({ heading, message, action, onClicked, title, text }) => {
   return (
     <div className='flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img'>
       {/* Overlay */}
@@ -11,9 +10,14 @@ const Hero = ({heading, message, action, onClicked, title, text}) => {
         <h2 className='flex text-5xl font-bold'>{heading}</h2>
         <p className='py-5 text-xl'>{message}</p>
         <a className='font-bold cursor-pointer inline-block border border-white bg-transparent text-white mx-auto px-8 py-2 hover:bg-blue-500 rounded hover:border-transparent group duration-300' href={onClicked}>{action} <FaArrowRight className='group-hover:rotate-90 group-hover:duration-500' size={30} /></a>
-        <HCard className='z-[2]' title={title} text={text} />
+        <br /><br /><br />
+        <div className='relative max-w-[540px] m-auto py-12 p-4 border-r border-b border-t border-l border-gray-400 lg:border-gray-400  rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal'>
+          <div className='m-auto'>
+            <div className='text-white font-bold text-xl'>{title}</div>
+            <p className='text-white text-base'>{text}</p>
+          </div>
+        </div>
       </div>
-      
     </div>
   );
 };
