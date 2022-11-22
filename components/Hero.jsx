@@ -11,7 +11,7 @@ const Hero = ({heading, message, action, onClicked, title, text}) => {
         <h2 className='flex text-5xl font-bold'>{heading}</h2>
         <p className='py-5 text-xl'>{message}</p>
         <a className='font-bold cursor-pointer inline-block border border-white bg-transparent text-white mx-auto px-8 py-2 hover:bg-blue-500 rounded hover:border-transparent group duration-300' href={onClicked}>{action} <FaArrowRight className='group-hover:rotate-90 group-hover:duration-500' size={30} /></a>
-        <HCard title={title} text={text} />
+        <HCard className='z-[2]' title={title} text={text} />
       </div>
       
     </div>
