@@ -1,11 +1,13 @@
 import React from 'react'
 import About from '../components/About'
 import Hero from '../components/Hero'
+import { logo } from '../components/ImageExports';
 
 const about = () => {
     return (
         <div>
-            <Hero heading='About' 
+            <Hero logo={logo}
+            heading='About' 
             message='Get to know who we are' 
             action='About Us' 
             onClicked='#aboutus' 

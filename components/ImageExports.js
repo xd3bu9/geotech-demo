@@ -10,5 +10,6 @@ import tractor from '../public/tractor.jpg'
 import tractor2 from '../public/tractor2.jpg'
 import sunset from '../public/sunset.jpg'
 import ongoing from "../public/ongoing_build.jpg";
+import logo from "../public/logo.jpg";
 
-export { house1, house3, ongoing, cranes4, houseplanC, hvacC, projman, sunset, roadwork, roadwork3, tractor, tractor2 }
+export { house1, house3, ongoing, cranes4, houseplanC, hvacC, projman, sunset, roadwork, roadwork3, tractor, tractor2, logo }

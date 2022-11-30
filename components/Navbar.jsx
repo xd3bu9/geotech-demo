@@ -31,12 +31,7 @@ const Navbar = () => {
       className='fixed left-0 top-0 w-full z-10 ease-in duration-300'
     >
       <div className='max-w-[1640px] m-auto flex justify-between items-center p-4 text-white'>
-        <Link href='/'>
-          {/* <h1 style={{ color: `${textColor}` }} className='hidden sm:flex font-bold text-4xl'>
-            GeoTech
-          </h1> */}
-          <img src='logo.jpg' alt='/' className='sm:flex h-[60px] w-[150px] rounded' />
-        </Link>
+        <div></div>
         <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
           <li className='p-4'>
             <Link href='/'>Home</Link>

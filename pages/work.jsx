@@ -2,11 +2,14 @@ import React from 'react'
 import Hero from '../components/Hero'
 import Portfolio from '../components/Portfolio'
 import Services from '../components/Services'
+import { logo } from '../components/ImageExports';
 
 const work = () => {
   return (
     <div>
-        <Hero heading='Services' 
+        <Hero
+        logo={logo}
+        heading='Services' 
         message='' 
         action='Explore' 
         onClicked="#services" 

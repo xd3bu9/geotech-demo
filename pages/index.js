@@ -4,6 +4,7 @@ import Instagram from '../components/Instagram';
 import Slider from '../components/Slider';
 import { SliderData } from '../components/SliderData';
 import Socials from '../components/Socials';
+import { logo } from '../components/ImageExports';
 
 export default function Home() {
   return (
@@ -13,8 +14,9 @@ export default function Home() {
         <meta name='description' content='GeoTech Developers Limited official website' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Hero 
-      heading='GeoTech Developers' 
+      <Hero
+      logo={logo}
+      heading='GeoTech Developers Ltd' 
       message='Investing on solid ground.' 
       action='Explore' 
       onClicked='/work#services'

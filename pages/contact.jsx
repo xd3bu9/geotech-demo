@@ -1,11 +1,13 @@
 import React from 'react'
 import Contact from '../components/Contact'
 import Hero from '../components/Hero'
+import { logo } from '../components/ImageExports';
 
 const contact = () => {
   return (
     <div>
-        <Hero 
+        <Hero
+        logo={logo}
         heading='Contact' 
         message='' 
         action='contact us' 

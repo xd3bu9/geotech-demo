@@ -1,12 +1,22 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
+import Image from 'next/image';
 
-const Hero = ({ heading, message, action, onClicked, title, text }) => {
+const Hero = ({ heading, message, action, onClicked, title, text, logo }) => {
   return (
     <div className='flex items-center justify-center h-screen pb-16 bg-fixed bg-center bg-cover custom-img'>
       {/* Overlay */}
       <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]' />
       <div className='p-4 text-white z-[2] mt-[6rem]'>
+        <div className='rounded'>
+        <Image
+          src={logo}
+          alt='/'
+          layout='responsive'
+          height='150'
+          width='250'
+          objectFit='contain'/>
+        </div>
         <h2 className='flex text-2xl lg:text-5xl font-bold'>{heading}</h2>
         <p className='py-3 text-normal'>{message}</p>
         <a className='font-bold cursor-pointer inline-block border border-white bg-transparent text-white mx-auto px-8 py-2 hover:bg-blue-500 rounded hover:border-transparent group duration-300' href={onClicked}>{action} <FaArrowRight className='group-hover:rotate-90 group-hover:duration-500' size={30} /></a>
