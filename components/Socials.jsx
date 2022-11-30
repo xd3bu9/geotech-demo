@@ -13,7 +13,7 @@ const Socials = () => {
                     <div className='h-12'>
                         <FaMobileAlt size={40} />
                     </div>
-                    <div className='p-2 h-12'>+254 724 066 685</div>
+                    <div className='p-2 h-12'>+254 723 164 018</div>
                 </div>
                 {/**email*/}
                 <div className='shadow-lg rounded-lg justify-center p-3 flex mb-4 hover:bg-stone-700 hover:text-white duration-300'>
