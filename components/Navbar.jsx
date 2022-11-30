@@ -35,7 +35,7 @@ const Navbar = () => {
           {/* <h1 style={{ color: `${textColor}` }} className='hidden sm:flex font-bold text-4xl'>
             GeoTech
           </h1> */}
-          <img src='logo.jpg' alt='/' className='hidden sm:flex h-[60px] w-[150px] rounded' />
+          <img src='logo.jpg' alt='/' className='sm:flex h-[60px] w-[150px] rounded' />
         </Link>
         <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
           <li className='p-4'>
