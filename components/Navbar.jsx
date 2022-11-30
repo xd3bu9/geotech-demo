@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
@@ -31,9 +32,10 @@ const Navbar = () => {
     >
       <div className='max-w-[1640px] m-auto flex justify-between items-center p-4 text-white'>
         <Link href='/'>
-          <h1 style={{ color: `${textColor}` }} className='hidden sm:flex font-bold text-4xl'>
+          {/* <h1 style={{ color: `${textColor}` }} className='hidden sm:flex font-bold text-4xl'>
             GeoTech
-          </h1>
+          </h1> */}
+          <img src='logo.jpg' alt='/' className='hidden sm:flex h-[60px] w-[150px] rounded' />
         </Link>
         <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
           <li className='p-4'>
