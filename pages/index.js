@@ -23,6 +23,7 @@ export default function Home() {
       title='For all your Engineering and Construction needs'
       text='Construction, Architectural & Structural design, Plumbing, Electrical installation and HVAC services, Partitioning, Landscaping, Demolitions, Repair and Maintenance,  Road Construction and Water, Waste Water and Drainage'
       />
+      <div className='h-screeen[25%]'></div>
       <Slider slides={SliderData} />
       <Socials />
       <Instagram />
