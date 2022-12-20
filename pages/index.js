@@ -14,9 +14,6 @@ export default function Home() {
         <meta name='description' content='GeoTech Developers Limited official website' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <div class="flex p-2 flex-1">
-          <img class="object-cover overflow-hidden rounded-2xl" src={newLogo} alt="image" height="90" width="250" />
-        </div>
       <Hero
       logo="geotech-logo1.png"
       heading='GeoTech Developers Ltd' 
