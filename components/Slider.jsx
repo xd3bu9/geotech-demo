@@ -20,19 +20,20 @@ const Slider = ({ slides }) => {
 
   return (
     <div id='gallery' className='max-w-[1240px] mx-auto'>
+      <div className='z-[2]'>
       <h1 className='text-2xl font-bold text-center p-4'>Portfolio</h1>
+      </div>
       <div className='relative flex justify-center p-4'>
 
-      {SliderData.map((img, index) => {
-        return (
-          <div
-            key={index}
-            className={
-              index === current
-                ? 'opacity-[1] ease-in duration-1000'
-                : 'opacity-0'
-            }
-          >
+        {SliderData.map((img, index) => {
+          return (
+            <div
+              key={index}
+              className={
+                index === current
+                  ? 'opacity-[1] ease-in duration-1000'
+                  : 'opacity-0'
+              }>
               <FaArrowCircleLeft
                 onClick={prevSlide}
                 className='absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]'
@@ -53,9 +54,9 @@ const Slider = ({ slides }) => {
                 size={50}
               />
             </div>
-        );
-    })}
-    </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

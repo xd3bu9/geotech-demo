@@ -8,7 +8,7 @@ import { newLogo, logo } from '../components/ImageExports';
 
 export default function Home() {
   return (
-    <div>
+    <div className='z-[2]'>
       <Head>
         <title>GeoTech developers</title>
         <meta name='description' content='GeoTech Developers Limited official website' />
