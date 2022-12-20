@@ -11,7 +11,7 @@ const Hero = ({ heading, message, action, onClicked, title, text, logo }) => {
       {/* <div className='absolute top-0 lg:h-full w-full md:h-full h-[131%] bg-fixed bg-cover bg-black/70 z-[1]' /> */}
       <div className='p-4 text-white z-[2] mt-[4rem]'>
         <div className='flex p-2 flex-1'>
-          <img className='object-cover overflow-hidden rounded-2xl' src={logo} alt="image" height="90" width="250" />
+          <Image className='object-fill overflow-hidden rounded-2xl' src={logo} alt="image" height="90" width="250" />
         </div>
         <h2 className='flex text-2xl lg:text-5xl font-bold'>{heading}</h2>
         <p className='py-3 text-normal'>{message}</p>

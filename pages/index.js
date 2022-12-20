@@ -15,7 +15,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Hero
-      logo="geotech-logo1.png"
+      logo={newLogo}
       heading='GeoTech Developers Ltd' 
       message='Investing on solid ground.' 
       action='Explore' 
