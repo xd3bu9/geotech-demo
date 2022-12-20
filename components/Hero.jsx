@@ -7,16 +7,19 @@ const Hero = ({ heading, message, action, onClicked, title, text, logo }) => {
     <div className='flex items-center justify-center h-screen bg-fixed bg-center bg-cover custom-img'>
       {/* Overlay */}
       <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]' />
-      <div className='p-4 text-white z-[2] mt-[3rem]'>
-        <div className='rounded z-[-2] mt-[1rem]'>
+      <div className='p-4 text-white z-[2] mt-[4rem]'>
+        {/* <div className='rounded z-[-2] mt-[2rem] h-16'>
           <Image
             src={logo}
             alt='/'
             layout='responsive'
-            height='50'
-            width='150'
-            // cover
-            objectFit='contain' />
+            // height='90'
+            // width='250'
+            // contain
+            objectFit='cover' />
+        </div> */}
+        <div class="flex p-2 flex-1">
+          <img class="object-cover overflow-hidden rounded-2xl" src={logo} alt="image" height="90" width="250" />
         </div>
         <h2 className='flex text-2xl lg:text-5xl font-bold'>{heading}</h2>
         <p className='py-3 text-normal'>{message}</p>
