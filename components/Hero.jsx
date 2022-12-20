@@ -6,10 +6,10 @@ const Hero = ({ heading, message, action, onClicked, title, text, logo }) => {
   return (
     <div className='flex items-center justify-center lg:h-screen bg-fixed bg-center bg-cover custom-img'>
       {/* Overlay */}
-      <div className='absolute top-0 lg:left-0 lg:right-0 lg:bottom-0 w-full h-[131%] bg-fixed bg-black/70 z-[2]' />
+      <div className='absolute top-0 lg:h-full w-full md:h-full h-[131%] bg-fixed bg-black/70 z-[2]' />
       <div className='p-4 text-white z-[2] mt-[4rem]'>
-        <div class="flex p-2 flex-1">
-          <img class="object-cover overflow-hidden rounded-2xl" src={logo} alt="image" height="90" width="250" />
+        <div className='flex p-2 flex-1'>
+          <img className='object-cover overflow-hidden rounded-2xl' src={logo} alt="image" height="90" width="250" />
         </div>
         <h2 className='flex text-2xl lg:text-5xl font-bold'>{heading}</h2>
         <p className='py-3 text-normal'>{message}</p>
