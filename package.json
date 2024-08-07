@@ -2,7 +2,7 @@
   "name": "geotech-developers-limited",
   "version": "0.1.0",
   "engines": {
-    "node": "16.17.0"
+    "node": "20.16.0"
   },
   "private": true,
   "scripts": {
